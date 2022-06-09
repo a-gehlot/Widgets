@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+.clockWidget {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    width: 550px;
+    background-color: orange;
+    flex-direction: column;
+    border: 1px solid black;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.clockWidget > li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+}
+
