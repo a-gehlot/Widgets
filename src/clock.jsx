@@ -30,6 +30,10 @@ class Clock extends React.Component {
     componentDidMount() {
         this.interval = setInterval(this.tick, 1000)
     }
+
+    componentWillUnmount() {
+        clearInterval(this.interval)
+    }
 }
 
 export default Clock;

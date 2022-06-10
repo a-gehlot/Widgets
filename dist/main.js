@@ -75,6 +75,11 @@ var Clock = /*#__PURE__*/function (_React$Component) {
     value: function componentDidMount() {
       this.interval = setInterval(this.tick, 1000);
     }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      clearInterval(this.interval);
+    }
   }]);
 
   return Clock;
