@@ -16,7 +16,7 @@ class Headers extends React.Component {
             )
         })
         return (
-            <ul>
+            <ul className="headers">
                 {headers}
             </ul>
         )
@@ -42,13 +42,14 @@ class Tabs extends React.Component {
         const selectedPane = this.props.tabs[this.state.tabIdx];
 
         return(
-            <div>
+            <div className="tabs">
+                <h1>Tabs</h1>
                 <Headers
                 tabs={this.props.tabs}
                 tabIdx={this.state.tabIdx}
                 changeTab={this.changeTab}
                 />
-                <div>
+                <div className="content">
                     {selectedPane.content}
                 </div>
             </div>
