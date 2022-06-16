@@ -4,6 +4,7 @@ import React from 'react';
 import Clock from './clock'
 import Tabs from './tabs'
 import Weather from './weather'
+import Autocomplete from './autocomplete';
 
 const tabs = [
     {title: "One", content: "I am the first"},
@@ -11,6 +12,7 @@ const tabs = [
     {title: "Three", content: "I am the third"}
 ]
 
+const names = ['Abba', 'Bobby', 'Barney', 'Jeff', 'Jenny', 'Sarah', 'Sally', 'Xander'];
 
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('root');
@@ -21,5 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <Tabs tabs={tabs} />
             <Weather />
         </div>
+            <Autocomplete names={names} />
     </div>)
 })
