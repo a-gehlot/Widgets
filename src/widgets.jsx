@@ -3,6 +3,7 @@ import * as ReactDOMClient from 'react-dom/client';
 import React from 'react';
 import Clock from './clock'
 import Tabs from './tabs'
+import Weather from './weather'
 
 const tabs = [
     {title: "One", content: "I am the first"},
@@ -16,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const root = ReactDOMClient.createRoot(container);
     root.render(<div>
         <Clock/>
-        <Tabs tabs={tabs}/>
+        <div className='middleRow'>
+            <Tabs tabs={tabs} />
+            <Weather />
+        </div>
     </div>)
 })

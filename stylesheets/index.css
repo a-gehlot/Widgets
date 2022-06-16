@@ -1,11 +1,11 @@
 body {
     display: flex;
     justify-content: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
 .clockWidget {
-    font-family: 'Open Sans', sans-serif;
     display: flex;
     width: 550px;
     background-color: orange;
@@ -25,7 +25,6 @@ body {
 }
 
 .tabs {
-    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
     
@@ -39,9 +38,9 @@ body {
 }
 
 .headers > li, .content {
-    width: 100px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    width: calc(250px/3);
+    padding-bottom: 5px;
+    padding-top: 5px;
     text-align: center;
     background-color: lightgreen;
     border: 2px solid gray;
@@ -54,12 +53,35 @@ body {
 }
 
 .content {
-    width: 300px;
-    height: 200px;
+    width: 249px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     border-radius: 0;
     border-top: 0;
 }
 
 .headers > li.active {
     border-bottom: 0;
+    font-weight: bold;
+}
+
+.weather {
+    margin-left: 40px;
+}
+
+.weatherBox {
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: lightpink;
+}
+
+.weatherBox ul li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+
+.middleRow {
+    display: flex;
 }
