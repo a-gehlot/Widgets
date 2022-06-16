@@ -86,3 +86,25 @@ body {
 .middleRow {
     display: flex;
 }
+
+.autocomplete {
+    padding-bottom: 20px;
+}
+
+.autocompleteWidget {
+    background-color: lightblue;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+
+.autocompleteWidget ul li {
+    margin: 2px;
+}
+
+input {
+    width: 200px;
+    padding: 2px;
+    margin: 10px auto;
+}
